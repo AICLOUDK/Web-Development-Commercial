@@ -1,0 +1,6 @@
+To create the database and initial products (if uncommented), run Python Shell and execute:
+
+from app import db, Product
+db.create_all()
+db.session.add(Product(name='Sample Product 1', price=10.99))
+db.session.commit()
